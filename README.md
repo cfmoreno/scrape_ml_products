@@ -1,20 +1,23 @@
-<h1>Scrape MercadoLibre's Products</h1>
+# Web Scraping Product Data from Mercado Libre
 
-Repo with python code developed for automating the process of scraping products from MercadoLibre's website for any query you may need. It uses Requests, Pandas and BeautifulSoup to scrape the products and then saves them in an Excel file.
+This Jupyter Notebook scrapes product data from Mercado Libre, filters it based on price, and exports the results to an Excel file.
 
-In the future I will put the code in a .py file so it can be used as a script and not only as a Jupyter Notebook.
+## Requirements
 
+1.  Python 3.7 or higher.
+2.  Install the required Python packages using pip:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  Execute the jupyter notebook.
 
-<h1>Requirements</h1>
+## How to use
 
-0. Python and Jupyter Notebooks installed.
-
-1. Use pip install to install the requirements.txt using the following command: `pip install -r requirements.txt` on the project root folder.
-
-2. Run 'main.ipynb' on Jupyter Notebooks.
-
-<h1>How to use it</h1>
-
-After fulfilling the requirements above, simply run each step with the dedicated button to run cells or by using the shift + enter shortcut on every cell.
-
-You can modify the query by changing the 'query' variable on the first cell of the notebook, so you can do the scrape process on any query you may need.
+1.  **Install Dependencies:** Run `pip install -r requirements.txt` to install the required Python packages.
+2.  **Open the Notebook:** Open the Jupyter Notebook file.
+3.  **Run the Notebook:** Execute the notebook cells sequentially.
+4.  **Verify Data:** The scraped and filtered product data will be saved to an Excel file named `products.xlsx` in the same directory.
+5.  **Customize:**
+    * Modify the `query` and `base_url` variables in the first code cell to scrape data from a different website or for a different product category.
+    * Adjust the price filtering conditions in the `filter_and_sort_data` function to suit your needs.
+    * Change the output filename by modifying the `filename` parameter in the `export_to_excel` function.
